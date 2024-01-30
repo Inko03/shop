@@ -1,9 +1,10 @@
 #menu{
     display: flex;
+    cursor: none;
 }
 #ul{
     list-style-type: none;
-    font-size: 7.8vw;
+    font-size: 10vw;
     margin: 0;
     padding: 0;
     font-weight: 100;
@@ -15,6 +16,7 @@ background-color: black;
 height: 80vh;
 transform: rotate(20deg);
 left: 38vw;
+display: none;
 }
 .li{
     position: relative;
@@ -50,12 +52,12 @@ left: 38vw;
 .active::after{
     width: 100%;
 }
-@media only screen and (max-width:530px){
+@media only screen and (min-width:600px){
     #ul{
-        font-size: 10vw;
+        list-style-type: none;
+        font-size: 8vw;
+        margin: 0;
+        padding: 0;
+        font-weight: 100;
     }
-    #line{
-        display: none;
-    }
-}
-    
+  }

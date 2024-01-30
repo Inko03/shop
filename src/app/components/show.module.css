@@ -1,97 +1,110 @@
 #mainshow{
-    height: 100vh;
-    width: 50vw;
-    text-align: right;
-    display: flex;
-    align-items: end;
-}
-#photo{
-    height: 51vh;
-    width: 43vw;
-    margin: 0;
-    font-size: 0;
-}
-
-#text{
-    display: block;
-    text-align: right;
-    font-weight: 500;
-    font-size: 1.2rem;
-    line-height: 34px;
-    height: 200px;
-    width: 43vw;
-}
-
-.phototext{
-    position: relative;
-    margin: 0;
-    font-size: 1.3vh;
-    display: block;
-    text-align: right;
-}
-#mainPhoto{
-    position: relative;
-    width: 43vw;
-    height: 52.5vh;
-    margin-right: 20px;
-    overflow: hidden;
-}
-#photoContainer{
-    transition: ease-in-out 0.6s;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-}
-.photodiv{
-    display: flex;
-    flex-direction: column;
-}
-#wrapper{
     display: flex;
     flex-direction: column;
     align-items: end;
+    padding-right: 10px;
 }
-#textinwraper{
-    right: 20px;
-    position: absolute;
-    transition: ease-in-out 0.6s;
-}
-#textwraper{
+#slider{
+    height: 69vw;
+    width: 70vw;
     overflow: hidden;
     position: relative;
-    height: 200px;
-    width: 50vw;
 }
-@media only screen and (max-width:530px){
-    #photo{
-        height: 39vh;
-        width: 53vw;
-        margin: 0;
-        font-size: 0;
-    }
-    #mainPhoto{
-        position: relative;
-        width: 53vw;
-        height: 40.5vh;
-        margin-right: 20px;
-        overflow: hidden;
-    }
+#sliderphoto{
+    transition: ease-in-out 0.8s;
+    position: absolute;
+    width: 70vw;
+    top: 0;
+}
+.divphoto{
+    height: 70vw;
+}
+.img{
+    object-fit: fill;
+    height: 65vw;
+}
+.span{
+    display: block;
+    width: 100%;
+    text-align: right;
+    font-size: 3vw;
+}
+#onetext{
+    position: absolute;
+    transition: ease-in-out 0.8s;
+    top: 0;
+}
+#textslider{
+    width: 95vw;
+    height: 30vw;
+    overflow: hidden;
+    position: relative;
+}
+.divtext{
+    text-align: right;
+    height: 30vw;
+}
+.textin{
+    font-size: 4vw;
+}
+#goto{
+    border: none;
+    background-color: black;
+    color: aliceblue;
+    margin-top: 0.5vw;
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem ;
+}
+@media only screen and (min-width:600px){
     #mainshow{
-        height: 100vh;
-        width: 100vw;
-        text-align: right;
         display: flex;
-        align-items: start;
-        justify-content: end;
+        flex-direction: column;
+        align-items: flex-end;
     }
-    #textwraper{
-        width: 100vw;
+    #textslider{
+        width: 50vw;
+        height: 10vw;
+        overflow: hidden;
+        position: relative;
     }
-    #text{
-        font-weight: 400;
-        font-size: 0.8rem;
-        line-height: 20px;
-        width: 100%;
+    .divtext{
+        text-align: right;
+        height: 25vw;
     }
-    
-}
+    .textin{
+        font-size: 1.5vw;
+    }
+    .span{
+        font-size: 1vw;
+    }
+    #slider{
+        margin-top: 10%;
+        height: 34vw;
+        width: 40vw;
+        overflow: hidden;
+        position: relative;
+    }
+    #sliderphoto{
+        transition: ease-in-out 0.8s;
+        position: absolute;
+        width: 40vw;
+        top: 0;
+    }
+    .divphoto{
+        height: 34vw;
+    }
+    .img{
+        object-fit: fill;
+        height: 32vw;
+    }
+    #goto{
+        font-size: 0.9rem;
+        padding: 0.8vw 1.8vw 0.8vw 1.8vw ;
+    }
+  }
+  @media only screen and (min-width:600px){
+    #textslider{
+        height: 15vw;
+        overflow: hidden;
+        position: relative;
+    }
+  }
