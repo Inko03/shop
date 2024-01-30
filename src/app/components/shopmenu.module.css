@@ -1,0 +1,62 @@
+#menu{
+    height: 70px;
+    width: 100%;
+    background-color: #F5F5F5;
+    position: fixed;
+    z-index: 999;
+}
+#menuicon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+#icon{
+    height: 48px;
+    cursor: pointer;
+}
+#popup{
+    z-index: 9999;
+    text-align: center;
+    font-size: 0.8rem;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 10000px;
+    background-color: red;
+}
+#titleMenu{
+    position: absolute;
+    font-weight: 100;
+    font-size: 3rem;
+    left: 0;
+}
+#divicon:hover #popcarts{
+    right: 0;
+    width: 230px;
+}
+#popcarts{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in-out 0.5s;
+    right: -100px;
+    width: 0;
+    background-color:#F5F5F5;
+}
+.popcart{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    margin-bottom: 5px;
+}
+.popimg{
+    height: 40px;
+}
+.textpop{
+    font-size: 0.8rem;
+}

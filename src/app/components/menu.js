@@ -1,9 +1,7 @@
 'use client'
-import { useEffect, useState } from 'react'
 import style from'./menu.module.css'
 
 export default function Maenu(){
-    const [photostate, setPhotostate]=useState(0)
     const show = (e)=>{
         const inmenu = document.querySelectorAll('.menu_li__dFTTU')
         const actualphoto = document.querySelector('.show_divphoto__4qFuf')
