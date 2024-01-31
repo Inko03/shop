@@ -1,10 +1,12 @@
 import { useCart } from "../contexts/CartContext" 
 import style from '../components/shopmenu.module.css'
+import { CartProvider } from "../contexts/CartContext";
 export default function Shopmenu(){
     const {cart} = useCart();
-    console.log(cart.length)
+    console.log(cart)
     return(
-        <div id={style.menu}>
+        <CartProvider>
+                    <div id={style.menu}>
             <span id={style.titleMenu}>PULSO</span>
             <div id={style.menuicon}>
                 <div id={style.divicon}>
@@ -24,5 +26,6 @@ export default function Shopmenu(){
                 {cart.length>0?<span id={style.popup}>{cart.length}</span>:null}
             </div>
         </div>
+        </CartProvider>
     )
 }

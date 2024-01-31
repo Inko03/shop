@@ -23,7 +23,7 @@ export default function Shop(){
             price:400.00
         },        {
             id:3,
-            img:"but9.jpg",
+            img:"but7.jpg",
             name:"Laura",
             sernum:"123asd1",
             size:[36,37,38,39],
@@ -31,7 +31,7 @@ export default function Shop(){
         },
         {
             id:4,
-            img:"but9.jpg",
+            img:"but6.jpg",
             name:"Amelia",
             sernum:"123asd1",
             size:[36,37,38,39],

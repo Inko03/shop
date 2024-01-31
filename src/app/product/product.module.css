@@ -26,6 +26,7 @@
 }
 #img{
     width: 100%;
+    margin-top: 30px;
 }
 #sizes{
     margin-top: 20px;
@@ -47,7 +48,11 @@
     border: none;
     background-color: rgb(20, 20, 20);
     color: aliceblue;
-    padding: 1rem 0 1rem 0;
+    padding: 0.6rem 0 0.6rem 0;
     letter-spacing: -0.5px;
     font-size: 2rem;
+}
+#divdesc{
+    margin-top: 30px;
+    margin-left: 10px;
 }

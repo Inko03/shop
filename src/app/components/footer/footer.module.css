@@ -1,0 +1,29 @@
+#footer{
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+}
+.ullist{
+    list-style-type: none;
+    color:aliceblue;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    padding: 0;
+}
+.listicon{
+    list-style-type: none;
+    color:aliceblue;
+    font-size: 0.7rem;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    padding: 0;
+    display: flex;
+}
+.icon{
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+}
