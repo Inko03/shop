@@ -3,7 +3,6 @@ import style from '../components/shopmenu.module.css'
 import { CartProvider } from "../contexts/CartContext";
 export default function Shopmenu(){
     const {cart} = useCart();
-    console.log(cart)
     return(
         <CartProvider>
                     <div id={style.menu}>

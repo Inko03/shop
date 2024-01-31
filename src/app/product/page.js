@@ -1,8 +1,9 @@
 'use client'
 import style from "./product.module.css"
 import Menu from '../components/shopmenu'
+import Button from "./button"
 import { CartProvider } from "../contexts/CartContext"
-import Footer from "../components/footer/footer"
+
 export default function Products(){
     return(
         <CartProvider>
@@ -23,7 +24,7 @@ export default function Products(){
                         <div className={style.size}>36</div>
                         <div className={style.size}>36</div>
                     </div>
-                    <button id={style.button}>Buy</button>
+                        <Button product={{id:1,img:"but9.jpg",name:"Laura",price:300}}/>
                     <div id={style.divdesc}> <span id={style.desc}>Botki dla kobiet to eleganckie buty o długości cholewki zakrywającej kostkę, zapewniające stylową i komfortową ochronę przed zimową aurą. Stanowią doskonałe połączenie modnego designu i praktyczności, idealne zarówno do codziennych stylizacji, jak i bardziej formalnych okazji.</span></div>
                     <img id={style.img} src='but9.jpg'/>
                     <img id={style.img} src='but9.jpg'/>

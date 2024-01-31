@@ -8,8 +8,8 @@ export default function Home() {
   return (
     <div id="main-id">
       <span id="name-brand">PUSLO</span>
-    <Menu/>
-    <Show/>
+        <Menu/>
+        <Show/>
     </div>
   );
 }

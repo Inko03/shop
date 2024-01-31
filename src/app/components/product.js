@@ -1,5 +1,4 @@
 "use client"
-import { useState } from 'react'
 import style from './product.module.css'
 import { useCart } from '../contexts/CartContext'
 import Link from 'next/link';
