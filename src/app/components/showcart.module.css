@@ -1,0 +1,22 @@
+#showcart{
+width: 80vw;
+height: 110px;
+background-color: white;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 5px;
+margin-top: 10px;
+font-size: 0.8rem;
+}
+.cartimg{
+    width: 100px;
+}
+.button{
+    border: none;
+    color: aliceblue;
+    padding: 0.3rem 0.8rem 0.3rem  0.8rem;
+    background-color: black;
+    font-weight: 600;
+    font-size: 0.7rem;
+}

@@ -1,6 +1,7 @@
 import { useCart } from "../contexts/CartContext" 
 import style from '../components/shopmenu.module.css'
 import { CartProvider } from "../contexts/CartContext";
+import Link from "next/link";
 export default function Shopmenu(){
     const {cart} = useCart();
     return(
@@ -11,6 +12,7 @@ export default function Shopmenu(){
                 <div id={style.divicon}>
                     <div>
                     <img src='shopicon.png' id={style.icon}/>
+                        <Link href='/cart'>
                         <div id={style.popcarts}>
                             {cart.map(element=>(
                                 <div className={style.popcart}>
@@ -20,6 +22,7 @@ export default function Shopmenu(){
                                 </div>
                             ))}
                         </div>
+                        </Link>
                     </div>
                 </div>
                 {cart.length>0?<span id={style.popup}>{cart.length}</span>:null}
