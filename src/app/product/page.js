@@ -11,7 +11,7 @@ export default function Products(){
                         <h1 id={style.title}>Laura</h1>
                         <span id={style.numer}>Nr.123a12</span>
                     </div>
-                    <img id={style.img} src='photo0.jpg'/>
+                    <img id={style.img} src='/but0.jpg'/>
                     <div id={style.divprice}> <span id={style.price}>300.00zł</span></div>
                     <div id={style.sizes}>
                         <div className={style.size}>36</div>
