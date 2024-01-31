@@ -48,10 +48,10 @@ export default function Slider(){
                 <div className={style.line} id='3'></div>
             </div>
             <div id={style.sliderphoto}>
-                <div className={style.photodiv}><img src={`but0.jpg`} className={style.photo}/></div>
-                <div className={style.photodiv}><img src={`but1.jpg`} className={style.photo}/></div>
-                <div className={style.photodiv}><img src={`but2.jpg`} className={style.photo}/></div>
-                <div className={style.photodiv}><img src={`but3.jpg`} className={style.photo}/></div>
+                <div className={style.photodiv}><img src={`but8.jpg`} className={style.photo}/></div>
+                <div className={style.photodiv}><img src={`but9.jpg`} className={style.photo}/></div>
+                <div className={style.photodiv}><img src={`but7.jpg`} className={style.photo}/></div>
+                <div className={style.photodiv}><img src={`but6.jpg`} className={style.photo}/></div>
             </div>
     </div>
     )

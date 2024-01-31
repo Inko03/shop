@@ -8,7 +8,7 @@ export default function Shop(){
     const products = [
         {
             id:1,
-            img:"but1.jpg",
+            img:"but8.jpg",
             name:"Aurelia",
             sernum:"123asd1",
             size:[36,37,38,39],
@@ -16,14 +16,14 @@ export default function Shop(){
         },
         {
             id:2,
-            img:"but1.jpg",
+            img:"but9.jpg",
             name:"Martina",
             sernum:"123asd1",
             size:[36,37,38,39],
             price:400.00
         },        {
             id:3,
-            img:"but1.jpg",
+            img:"but9.jpg",
             name:"Laura",
             sernum:"123asd1",
             size:[36,37,38,39],
@@ -31,7 +31,7 @@ export default function Shop(){
         },
         {
             id:4,
-            img:"but1.jpg",
+            img:"but9.jpg",
             name:"Amelia",
             sernum:"123asd1",
             size:[36,37,38,39],
