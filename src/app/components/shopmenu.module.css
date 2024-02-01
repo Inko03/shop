@@ -54,6 +54,18 @@
     height: 40px;
     margin-bottom: 5px;
     color: black;
+    position: relative;
+}
+.popcart::after{
+    transition: ease-in-out 0.2s;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0)
+}
+.popcart:hover::after{
+    background-color: rgba(173, 173, 173, 0.137)
 }
 .popimg{
     height: 40px;

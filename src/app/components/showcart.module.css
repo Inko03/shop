@@ -4,7 +4,7 @@ height: 110px;
 background-color: white;
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-around;
 padding: 5px;
 margin-top: 10px;
 font-size: 0.8rem;
@@ -19,4 +19,12 @@ font-size: 0.8rem;
     background-color: black;
     font-weight: 600;
     font-size: 0.7rem;
+}
+.cartstyle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titlespan{
+    margin-bottom: 5px;
 }

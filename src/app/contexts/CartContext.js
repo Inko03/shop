@@ -1,25 +1,20 @@
-
-import { createContext,useContext,useEffect,useState } from "react";
+import { CartReducer } from "../reducer/reducer";
+import { createContext,useContext,useEffect,useReducer } from "react";
 const CartContext = createContext();
 
 export const CartProvider = ({children})=>{
-    const [cart,setCart]= useState([])
+    const cart={
+        Cart:JSON.parse(sessionStorage.getItem("Cart")) || []
+    }
+
+    const [CartState,CartDispatch] = useReducer(CartReducer,cart)
 
     useEffect(()=>{
-        if(sessionStorage.getItem('Cart')){
-            const dane = sessionStorage.getItem('Cart')
-            setCart(JSON.parse(dane))
-        }
-    },[])
-    const addToCart = (product) =>{
-        setCart((prevCart)=>{
-            const newCart = [...prevCart,product]
-            sessionStorage.setItem("Cart",JSON.stringify(newCart))
-            return newCart
-        })
-    }
+        sessionStorage.setItem('Cart',JSON.stringify(CartState.Cart))
+    },[CartState.Cart])
+
     return(
-        <CartContext.Provider value={{cart,addToCart}}>
+        <CartContext.Provider value={{CartDispatch,CartState}}>
             {children}
         </CartContext.Provider>
     )

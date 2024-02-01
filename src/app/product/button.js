@@ -2,11 +2,8 @@ import { useCart } from "../contexts/CartContext"
 import style from "./product.module.css"
 
 export default function Button({product}){
-    const {addToCart} = useCart();
-    const handleAddToCart=()=>{
-        addToCart(product)
-    }
+    const {CartDispatch} = useCart();
     return(
-        <button id={style.button} onClick={handleAddToCart}>Buy</button>
+        <button id={style.button} onClick={()=>CartDispatch({type:"ADD",payload:product})}>Buy</button>
     )
 }

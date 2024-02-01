@@ -3,13 +3,11 @@ import style from './product.module.css'
 import { useCart } from '../contexts/CartContext'
 import Link from 'next/link';
 export default function Product({product}){
-    const {addToCart}=useCart();
-    const handleAddToCart= ()=>{
-        addToCart(product)
-    }
+    const {CartDispatch}=useCart();
     return(
         <div className={style.cart} id={product.id}>
         <img src={product.img} className={style.imgofert}/>
+        <img className={style.star} src='star.png'/>
         <div className={style.desc}>
             <div className={style.info}>
                 <span className={style.infofont}>{product.name}</span>
@@ -20,7 +18,7 @@ export default function Product({product}){
         </div>
         <div className={style.buttons}>
             <Link className={style.link} href={'/product'}><button className={`${style.cartbutton} ${style.fullheight}`}>More...</button></Link>
-            <button className={`${style.cartbutton} ${style.black}`} onClick={handleAddToCart}>Buy</button>
+            <button className={`${style.cartbutton} ${style.black}`} onClick={()=>CartDispatch({type:"ADD",payload:product})}>Buy</button>
         </div>
     </div>
     )
