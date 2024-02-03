@@ -7,6 +7,11 @@ export const CartReducer = (state, action) => {
             console.log(newState)
             return {...state,Cart:newState}
         }
+        case "SET_CART":
+            console.log('Aktualizacja')
+            return {...state,Cart:action.payload}
+        case "SHOW":
+            return {...state,Cart:action.payload}
         default:            
             return null
     }

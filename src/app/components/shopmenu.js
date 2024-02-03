@@ -1,3 +1,4 @@
+'use cleint'
 import { useCart } from "../contexts/CartContext" 
 import style from '../components/shopmenu.module.css'
 import { CartProvider } from "../contexts/CartContext";

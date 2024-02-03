@@ -3,7 +3,7 @@ import style from "./product.module.css"
 import Menu from '../components/shopmenu'
 import Button from "./button"
 import { CartProvider } from "../contexts/CartContext"
-import { useEffect, useState } from "react"
+import {useState } from "react"
 
 export default function Products(){
     const [size, setSize] = useState()
