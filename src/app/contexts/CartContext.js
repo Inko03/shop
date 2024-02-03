@@ -10,9 +10,13 @@ export const CartProvider = ({children})=>{
 
             useEffect(()=>{
                 const storedData = JSON.parse(sessionStorage.getItem("Cart"))
-                CartDispatch({type:"SET_CART",payload:storedData})
-                setLoading(false)
-                console.log(storedData)
+                if(storedData){
+                    CartDispatch({type:"SET_CART",payload:storedData})
+                    setLoading(false)
+                    console.log(storedData)
+                }else{
+                    sessionStorage.setItem('Cart',JSON.stringify(CartState.Cart))
+                }
              },[])
 
                  useEffect(()=>{
