@@ -1,9 +1,10 @@
 #showcart{
 width: 80vw;
-height: 110px;
+height: 180px;
 background-color: white;
 display: flex;
 align-items: center;
+flex-direction: column;
 justify-content: space-around;
 padding: 5px;
 margin-top: 10px;
@@ -27,4 +28,25 @@ font-size: 0.8rem;
 }
 .titlespan{
     margin-bottom: 5px;
+    font-size: 0.7rem;
+}
+.infoselect{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.buttonsplus{
+    background-color: black;
+    border: none;
+    color: aliceblue;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.description{
+    font-size: 0.7rem;
 }

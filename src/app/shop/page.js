@@ -11,6 +11,7 @@ export default function Shop(){
             img:"but8.jpg",
             name:"Aurelia",
             sernum:"123asd1",
+            quantity:1,
             size:[36,37,38,39],
             price:230.00
         },
@@ -19,6 +20,7 @@ export default function Shop(){
             img:"but9.jpg",
             name:"Martina",
             sernum:"123asd1",
+            quantity:1,
             size:[36,37,38,39],
             price:400.00
         },        {
@@ -26,6 +28,7 @@ export default function Shop(){
             img:"but7.jpg",
             name:"Laura",
             sernum:"123asd1",
+            quantity:1,
             size:[36,37,38,39],
             price:120.00
         },
@@ -34,6 +37,7 @@ export default function Shop(){
             img:"but6.jpg",
             name:"Amelia",
             sernum:"123asd1",
+            quantity:1,
             size:[36,37,38,39],
             price:500.00
         }

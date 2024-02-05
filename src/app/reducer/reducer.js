@@ -4,14 +4,28 @@ export const CartReducer = (state, action) => {
             return {...state,Cart:[...state.Cart,action.payload]}
         case "REMOVE":{
             const newState = state.Cart.filter((element)=>element.id!==action.payload)
-            console.log(newState)
             return {...state,Cart:newState}
         }
         case "SET_CART":
-            console.log('Aktualizacja')
             return {...state,Cart:action.payload}
         case "SHOW":
             return {...state,Cart:action.payload}
+        case "PLUS":
+            return {...state,Cart:state.Cart.map(item=>{
+                if(item.id===action.payload&&item.quantity<6){
+                    return{...item,quantity:item.quantity+1}
+                }else{
+                    return item
+                }
+            })}
+        case "MINUS":
+                return {...state,Cart:state.Cart.map(item=>{
+                    if(item.id===action.payload&&item.quantity>1){
+                        return{...item,quantity:item.quantity-1}
+                    }else{
+                        return item
+                    }
+                })}
         default:            
             return null
     }
