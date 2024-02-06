@@ -17,7 +17,7 @@ export default function Showcart(){
                                  <button  className={style.buttonsplus} onClick={()=>CartDispatch({type:"PLUS",payload:element.id})}>+</button>
                                 </div>
                             </div>
-                            <div className={style.cartstyle}><span className={style.titlespan}>Size</span> <span className={style.description}>{element.size[0]}</span></div>
+                            <div className={style.cartstyle}><span className={style.titlespan}>Size</span> <span className={style.description}>{element.size.length>2?element.size[0]:element.size}</span></div>
                         </div>
                         <button className={style.button} onClick={()=>CartDispatch({type:"REMOVE",payload:element.id})}>Delet</button>
                     </div>

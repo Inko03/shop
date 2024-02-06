@@ -1,4 +1,4 @@
-import { useCart } from "../contexts/CartContext"
+import { useCart } from "../../contexts/CartContext"
 import style from "./product.module.css"
 
 export default function Button({product}){

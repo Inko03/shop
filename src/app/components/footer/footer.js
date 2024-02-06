@@ -17,8 +17,8 @@ export default function Footer(){
             </div>
             <div>
             <ul className={style.listicon}>
-                    <li><img src='fb.png' className={style.icon}/></li>
-                    <li><img src='insta.png' className={style.icon}/></li>
+                    <li><img src='/fb.png' className={style.icon}/></li>
+                    <li><img src='/insta.png' className={style.icon}/></li>
                 </ul>
             </div>
         </div>

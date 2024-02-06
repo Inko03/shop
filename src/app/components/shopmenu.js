@@ -12,13 +12,13 @@ export default function Shopmenu(){
             <div id={style.menuicon}>
                 <div id={style.divicon}>
                     <div>
-                    <img src='shopicon.png' id={style.icon}/>
+                    <img src='/shopicon.png' id={style.icon}/>
                         <Link href='/cart'>
                         <div id={style.popcarts}>
                             {
                                 CartState.Cart>0?null:CartState.Cart.map(element=>(
                                     <div className={style.popcart}>
-                                        <img className={style.popimg} src={element.img}/>
+                                        <img className={style.popimg} src={`/${element.img}`}/>
                                         <span className={style.textpop}>{element.name}</span>
                                         <span className={style.textpop}>{`${element.price}.00zł`}</span>
                                     </div>

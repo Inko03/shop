@@ -17,6 +17,7 @@
     right: 10px;
     height: 25px;
     cursor: pointer;
+    transition: ease-in-out 0.2s;
 }
 .imgofert{
     width: 470px;
