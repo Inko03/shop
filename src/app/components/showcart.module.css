@@ -1,6 +1,6 @@
 #showcart{
 width: 80vw;
-height: 180px;
+height: 235px;
 background-color: white;
 display: flex;
 align-items: center;
@@ -11,7 +11,7 @@ margin-top: 10px;
 font-size: 0.8rem;
 }
 .cartimg{
-    width: 100px;
+    width: 200px;
 }
 .button{
     border: none;

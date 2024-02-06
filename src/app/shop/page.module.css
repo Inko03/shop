@@ -14,6 +14,28 @@
 #oferts{
     width: 100%;
 }
+.show{
+    top: -60px;
+    opacity: 0;
+    transition: ease-in-out 0.3s;
+}
+.ullist{
+    list-style-type: none;
+    display: block;
+    z-index: 9999;
+    position: absolute;
+    padding: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin: 0;
+    transition: ease-in-out 0.2s;
+    opacity: 0;
+}
+.lilist{
+    margin-top: 5px;
+    border-bottom: 1px solid black;
+}
 .divbutton{
     height: 100%;
     position: relative;
