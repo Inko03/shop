@@ -5,8 +5,16 @@ import Link from 'next/link';
 export default function Product({product}){
     const {CartDispatch}=useCart();
     const liked = (e)=>{
-        e.target.style="transform:rotate(360deg)"
-        e.target.src="/starliked.png"
+        if(product.like){
+            product.like=false;
+            e.target.style="transform:rotate(-360deg)"
+            e.target.src="/starliked.png"
+        }else{
+            product.like=true;
+            e.target.style="transform:rotate(360deg)"
+            e.target.src="/star.png"
+        }
+        console.log(product)
     }
     return(
         <div className={style.cart} id={product.id}>

@@ -1,3 +1,5 @@
+import { Flamenco } from "next/font/google"
+
  const products = [
     {
         id:0,
@@ -6,7 +8,9 @@
         sernum:"123asd1",
         quantity:1,
         size:[36,37,38,39],
-        price:230.00
+        price:230.00,
+        category:"Botki",
+        like:true
     },
     {
         id:1,
@@ -15,15 +19,19 @@
         sernum:"123asd1",
         quantity:1,
         size:[36,37,38,39],
-        price:400.00
-    },        {
+        price:400.00,
+        category:"Sneakers",
+        like:true
+    },        
+    {
         id:2,
         img:"but7.jpg",
         name:"Laura",
         sernum:"123asd1",
         quantity:1,
         size:[36,37,38,39],
-        price:120.00
+        price:120.00,
+        like:true
     },
     {
         id:3,
@@ -32,7 +40,29 @@
         sernum:"123asd1",
         quantity:1,
         size:[36,37,38,39],
-        price:500.00
+        price:500.00,
+        category:"Botki",
+        like:true
+    },        {
+        id:4,
+        img:"but7.jpg",
+        name:"Laura",
+        sernum:"123asd1",
+        quantity:1,
+        size:[36,37,38,39],
+        price:120.00,
+        like:true
+    },
+    {
+        id:5,
+        img:"but6.jpg",
+        name:"Amelia",
+        sernum:"123asd1",
+        quantity:1,
+        size:[36,37,38,39],
+        price:500.00,
+        category:"Botki",
+        like:false
     }
  ]
  export default products
