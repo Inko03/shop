@@ -8,6 +8,8 @@ export const CartReducer = (state, action) => {
         }
         case "SET_CART":
             return {...state,Cart:action.payload}
+        case "SET_LIKE":
+            return {...state,Like:action.payload}
         case "SHOW":
             return {...state,Cart:action.payload}
         case "PLUS":
@@ -26,6 +28,15 @@ export const CartReducer = (state, action) => {
                         return item
                     }
                 })}
+        case "LIKE":
+            if(state.Like.some(element=>element.id===action.payload.id)){
+                return state
+            }else{
+                return {...state,Like:[...state.Like,action.payload]}
+            }
+        case "UNLIKE":
+            const newstate = state.Like.filter((element)=>element.id!=action.payload)
+            return{...state,Like:newstate}
         default:            
             return null
     }

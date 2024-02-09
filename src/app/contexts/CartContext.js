@@ -5,25 +5,28 @@ const CartContext = createContext();
 
 export const CartProvider = ({children})=>{
             const [loading, setLoading] = useState(true);
-            const [CartState,CartDispatch] = useReducer(CartReducer,{"Cart":[]})
+            const [CartState,CartDispatch] = useReducer(CartReducer,{"Cart":[],"Like":[]})
          
 
             useEffect(()=>{
-                const storedData = JSON.parse(sessionStorage.getItem("Cart"))
-                if(storedData){
-                    CartDispatch({type:"SET_CART",payload:storedData})
+                const storedCart = JSON.parse(sessionStorage.getItem("Cart"))
+                const storedLike = JSON.parse(sessionStorage.getItem("Like"))
+                if(storedCart||storedLike){
+                    CartDispatch({type:"SET_CART",payload:storedCart})
+                    CartDispatch({type:"SET_LIKE",payload:storedLike})
                     setLoading(false)
-                    console.log(storedData)
                 }else{
                     sessionStorage.setItem('Cart',JSON.stringify(CartState.Cart))
+                    sessionStorage.setItem('Like',JSON.stringify(CartState.Like))
                 }
              },[])
 
                  useEffect(()=>{
                     if(!loading){
                         sessionStorage.setItem('Cart',JSON.stringify(CartState.Cart))
+                        sessionStorage.setItem('Like',JSON.stringify(CartState.Like))
                     }
-                 },[CartState.Cart])
+                 },[CartState.Cart,CartState.Like])
                  return(
                      <CartContext.Provider value={{CartDispatch,CartState}}>
                          {children}

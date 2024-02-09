@@ -1,4 +1,4 @@
-import { Flamenco } from "next/font/google"
+
 
  const products = [
     {
@@ -10,7 +10,7 @@ import { Flamenco } from "next/font/google"
         size:[36,37,38,39],
         price:230.00,
         category:"Botki",
-        like:true
+        like:false
     },
     {
         id:1,
@@ -21,7 +21,7 @@ import { Flamenco } from "next/font/google"
         size:[36,37,38,39],
         price:400.00,
         category:"Sneakers",
-        like:true
+        like:false
     },        
     {
         id:2,
@@ -31,7 +31,7 @@ import { Flamenco } from "next/font/google"
         quantity:1,
         size:[36,37,38,39],
         price:120.00,
-        like:true
+        like:false
     },
     {
         id:3,
@@ -42,8 +42,9 @@ import { Flamenco } from "next/font/google"
         size:[36,37,38,39],
         price:500.00,
         category:"Botki",
-        like:true
-    },        {
+        like:false
+    },        
+    {
         id:4,
         img:"but7.jpg",
         name:"Laura",
@@ -51,7 +52,7 @@ import { Flamenco } from "next/font/google"
         quantity:1,
         size:[36,37,38,39],
         price:120.00,
-        like:true
+        like:false
     },
     {
         id:5,

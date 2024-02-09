@@ -25,12 +25,13 @@
     text-align: center;
     margin: 0;
     transition: ease-in-out 0.3s;
-    top: -20px;
+    top: -30px;
     pointer-events: none;
     opacity: 0;
+    font-size: 1.4rem;
 }
 .show{
-    top: 40px;
+    top: 70px;
     opacity: 1;
     pointer-events: all;
 }
@@ -95,6 +96,14 @@
     justify-content: space-between;
 }
 @media screen and (max-width:825px){
+    .show{
+        top: 40px;
+        opacity: 1;
+        pointer-events: all;
+    }
+    .ullist{
+        font-size: 1rem;
+    }
     .divbutton{
         margin-left: 10px;
         margin-right: 10px;
