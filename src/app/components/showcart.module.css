@@ -20,6 +20,18 @@ font-size: 0.8rem;
     background-color: black;
     font-weight: 600;
     font-size: 0.7rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    border: 1px solid rgba(82, 0, 0, 0);
+    transition: ease-in-out 0.15s ;
+    margin-right: 15px;
+}
+.button:hover{
+    box-shadow: 4px 4px 0px 0px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: rgb(24, 24, 24);
 }
 .cartstyle{
     display: flex;
@@ -34,6 +46,7 @@ font-size: 0.8rem;
     display: flex;
     justify-content: space-around;
     width: 100%;
+    user-select: none;
 }
 .buttonsplus{
     background-color: black;
@@ -46,7 +59,47 @@ font-size: 0.8rem;
     margin-right: 5px;
     text-align: center;
     cursor: pointer;
+    user-select: none;
+    transition: ease-in-out 0.15s;
+}
+.buttons{
+    height: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.buttonsplus:hover{
+    box-shadow: 1px 1px 0px 0px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    color: rgb(24, 24, 24);
 }
 .description{
     font-size: 0.7rem;
+}
+@media screen and (min-width:1000px){
+    #showcart{
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 5px;
+        margin-top: 10px;
+        }
+        .cartimg{
+            width: 300px;
+        }
+        .button{
+            border: none;
+            color: aliceblue;
+            padding: 0.4rem 1.2rem 0.4rem  1.2rem;
+            background-color: black;
+            font-weight: 400;
+            font-size: 1rem;
+        }
+        .titlespan{
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+        .description{
+            font-size: 0.8rem;
+        }
 }

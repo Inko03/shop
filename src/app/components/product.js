@@ -2,13 +2,8 @@
 import style from './product.module.css'
 import { useCart } from '../contexts/CartContext'
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
 export default function Product({product}){
     const {CartDispatch,CartState}=useCart();
-    const [like,setLike] = useState(0);
-    const setLocal = (dane)=> {
-        localStorage.setItem(JSON.stringify(dane))
-    }
     const liked = (e)=>{
         if(e.target.name==="true"){
             product.like=false;

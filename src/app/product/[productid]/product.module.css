@@ -42,6 +42,7 @@
     padding: 0.5rem 0 0.5rem 0;
     transition:  ease-in-out 0.2s;
     border: 1px solid rgb(20, 20, 20);
+    cursor: pointer;
 }
 .size:hover{
     transform: scale(1.03);

@@ -47,7 +47,7 @@
     {
         id:4,
         img:"but7.jpg",
-        name:"Laura",
+        name:"Martyna",
         sernum:"123asd1",
         quantity:1,
         size:[36,37,38,39],
@@ -57,7 +57,7 @@
     {
         id:5,
         img:"but6.jpg",
-        name:"Amelia",
+        name:"Ewelina",
         sernum:"123asd1",
         quantity:1,
         size:[36,37,38,39],

@@ -11,7 +11,7 @@ export default function Showcart(){
                             <div className={style.cartstyle}><span className={style.titlespan}>Price</span> <span className={style.description}>{`${element.price}.00zł`}</span></div>
                             <div className={style.cartstyle}><span className={style.titlespan}>Nr.kat</span> <span className={style.description}>{element.sernum}</span></div>
                             <div className={style.cartstyle}><span className={style.titlespan}>Quantity</span>
-                                <div>
+                                <div className={style.buttons}>
                                  <button className={style.buttonsplus} onClick={()=>CartDispatch({type:"MINUS",payload:element.id})}>-</button>
                                  <span className={style.description}>{element.quantity}</span>
                                  <button  className={style.buttonsplus} onClick={()=>CartDispatch({type:"PLUS",payload:element.id})}>+</button>
